@@ -9,8 +9,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="eduardogarcia.appemiolo.MainActivity">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtLogin"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp"
+        android:hint="Login" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtSenha"
+        android:layout_below="@+id/edtLogin"
+        android:layout_centerHorizontal="true"
+        android:hint="Senha" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:textAlignment="center"
+        android:layout_below="@+id/edtSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Não possui cadastro? Cadastre-se aqui."
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/txtCadastro" />
+
 </RelativeLayout>
