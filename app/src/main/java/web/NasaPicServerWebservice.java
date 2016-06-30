@@ -1,11 +1,10 @@
 package web;
 
+import api.FeedDTO;
+import retrofit2.Callback;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-/**
- * Created by George on 30/06/2016.
- */
 public interface NasaPicServerWebservice {
     @GET("/feed/list")
     void getFeed(@Query("page") int page, Callback<FeedDTO> callback);
